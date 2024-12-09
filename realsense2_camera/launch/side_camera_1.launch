@@ -1,0 +1,22 @@
+<launch>
+  <!-- connect camera -->
+  <include file="$(find realsense2_camera)/launch/rs_rgbd.launch">
+    <arg name="serial_no"           value="040322070602"/>
+    <arg name="camera"              value="camera"/>
+    <arg name="enable_fisheye"      value="false"/>
+    <arg name="enable_infra1"       value="false"/>
+    <arg name="enable_infra2"       value="false"/>
+    <arg name="enable_pointcloud"   value="false"/>
+    <arg name="depth_width"         default="640"/>
+    <arg name="depth_height"        default="480"/>
+    <arg name="depth_fps"           value="15"/>
+    <arg name="color_width"         default="640"/>
+    <arg name="color_height"        default="480"/>
+    <arg name="color_fps"           value="15"/>
+  </include>
+
+  <node name="dynparam_node" pkg="dynamic_reconfigure" type="dynparam" args="set_from_parameters camera/aligned_depth_to_color/image_raw/compressedDepth">
+    <param name="png_level" type="int" value="1"/>
+  </node>
+
+</launch>
