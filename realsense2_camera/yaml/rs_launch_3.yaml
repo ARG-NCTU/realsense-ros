@@ -1,0 +1,42 @@
+camera1:
+  camera_name: camera1
+  camera_namespace: camera
+  serial_no: "040322070602"
+  enable_color: true
+  enable_depth: true
+  enable_sync: true
+  align_depth: true
+  enable_rgbd: true
+  depth_module.profile: "640x480x15"
+  rgb_camera.profile: "640x480x15"
+  enable_compressed: true
+  enable_compressed_depth: true
+
+camera2:
+  camera_name: camera2
+  camera_namespace: camera
+  serial_no: "935322070841"
+  enable_color: true
+  enable_depth: true
+  enable_sync: true
+  align_depth: true
+  enable_rgbd: true
+  depth_module.profile: "640x480x15"
+  rgb_camera.profile: "640x480x15"
+  enable_compressed: true
+  enable_compressed_depth: true
+
+camera3:
+  camera_name: camera3
+  camera_namespace: camera
+  serial_no: "937622072048"
+  enable_color: true
+  enable_depth: true
+  enable_sync: true
+  align_depth: true
+  enable_rgbd: true
+  depth_module.profile: "640x480x15"
+  rgb_camera.profile: "640x480x15"
+  enable_compressed: true
+  enable_compressed_depth: true
+
