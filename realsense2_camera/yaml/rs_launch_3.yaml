@@ -3,7 +3,10 @@ camera1:
   camera_namespace: camera
   serial_no: "040322070602"
   enable_color: true
-  enable_depth: true
+  enable_depth: false
+  enable_infra: false
+  enable_infra1: false
+  enable_infra2: false
   enable_sync: true
   align_depth: true
   enable_rgbd: true
@@ -17,7 +20,10 @@ camera2:
   camera_namespace: camera
   serial_no: "935322070841"
   enable_color: true
-  enable_depth: true
+  enable_depth: false
+  enable_infra: false
+  enable_infra1: false
+  enable_infra2: false
   enable_sync: true
   align_depth: true
   enable_rgbd: true
@@ -31,7 +37,10 @@ camera3:
   camera_namespace: camera
   serial_no: "937622072048"
   enable_color: true
-  enable_depth: true
+  enable_depth: false
+  enable_infra: false
+  enable_infra1: false
+  enable_infra2: false
   enable_sync: true
   align_depth: true
   enable_rgbd: true
