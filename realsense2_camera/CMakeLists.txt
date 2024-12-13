@@ -291,6 +291,7 @@ install(
 # Install launch files
 install(DIRECTORY 
     launch
+    yaml
     DESTINATION share/${PROJECT_NAME}
     )
 
